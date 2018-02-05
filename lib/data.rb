@@ -2,19 +2,18 @@
 class Data
 
   def self.get_data(url)
-    Scraper.get_and_sort_data(url)
+    Scraper.get_and_sort_data(url).reject{|x| x[:title] == ""}
   end
 
-  def exposing_news(url)
-    new_array =
-    get_data.each.with_index(1) { |x,i|
+  def self.exposing_news(url)
+    get_data(url).each.with_index(1) { |x,i|
       if i < 10
-        hash = x[i]
-        puts "----------------"
-        puts "#{i}. #{hash[:title]}
-        puts "ptess the link to see the news: #{hash[:link]}"
+        puts ""
+        puts "#{i}. #{x[:title]}"
+        puts "ptess the link to see the news :  #{x[:link]}"
         puts "----------------"
       end
     }
   end
 end
+binding.pry
