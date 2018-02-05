@@ -1,4 +1,5 @@
-<a href="https://badge.fury.io/rb/breaking_news"><img src="https://badge.fury.io/rb/breaking_news.svg" alt="Gem Version" height="18"></a>Your Country Breaking News
+<a href="https://badge.fury.io/rb/breaking_news"><img src="https://badge.fury.io/rb/breaking_news.svg" alt="Gem Version" height="18"></a></br>
+<h1>Your Country Breaking News</h1></br>
 This Ruby Gem provides a CLI to view the 10 most breaking news in the your country as per the NowNews sponsored 10 latest breaking news the country of your choice.
 
 Installation
