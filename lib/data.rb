@@ -7,7 +7,7 @@ class Data
 
   def self.exposing_news(url)
     get_data(url).each.with_index(1) { |x,i|
-      if i < 10
+      if i < 11
         puts ""
         puts "#{i}. #{x[:title]}"
         puts "ptess the link to see the news :  #{x[:link]}"
@@ -16,4 +16,3 @@ class Data
     }
   end
 end
-binding.pry

@@ -1,0 +1,26 @@
+require_relative "../config/environment"
+
+def countries_input
+  puts "for any country news in Africa enter 'country name' like the following"
+  puts "for Egypt news enter 'Egypt' "
+  puts "for Algeria news enter 'Algeria' "
+  puts "for Tunisia news enter 'Tunisia' "
+  #puts "for Libya news enter 'Libya' "
+  puts "for Africa news enter ' ' "
+  puts "for exit enter 'exit' "
+end
+
+def get_latest_news
+  countries_input
+  user_input = ""
+  while user_input != "exit"
+    user_input = gets.strip
+    url = "http://www.newsnow.co.uk/h/World+News/Africa/" + "#{user_input}"
+    Data.exposing_news(url)
+  end
+
+end
+
+get_latest_news
+
+# ruby bin/data_cli
