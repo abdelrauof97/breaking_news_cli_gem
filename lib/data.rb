@@ -1,4 +1,5 @@
 
+require "colorize"
 class Data
 
   def self.get_data(url)
@@ -9,8 +10,8 @@ class Data
     get_data(url).each.with_index(1) { |x,i|
       if i < 11
         puts ""
-        puts "#{i}. #{x[:title]}"
-        puts "ptess the link to see the news :  #{x[:link]}"
+        puts "#{i}. '#{x[:title]}'.colorize{:red}"
+        puts "#{'ptess the link to see the news :'.colorize(:light_blue)} #{'#{x[:link]}'.colorize{:blue}}"
         puts "----------------"
       end
     }
