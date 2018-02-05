@@ -1,4 +1,4 @@
-Your Country Breaking News
+#Your Country Breaking News
 This Ruby Gem provides a CLI to view the 10 most breaking news in the your country as per the NowNews sponsored 10 latest breaking news the country of your choice.
 
 Installation
@@ -6,7 +6,7 @@ $ gem install breaking_news
 Usage
 Type the below and follow the on screen prompts.
 
-$ worlds-best-restaurants
+$ Breaking-News
 Development
 After checking out the repo, run bin/setup to install dependencies. Then, run rake spec to run the tests.
 
