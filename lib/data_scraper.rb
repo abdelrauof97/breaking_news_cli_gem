@@ -5,7 +5,6 @@ require 'pry'
 class Scraper
 
   def self.get_data(url)
-    scraper = new
     doc = Nokogiri::HTML(open(url))
     news = doc.css(".newsfeed a")
   end
